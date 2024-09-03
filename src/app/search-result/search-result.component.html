@@ -1,0 +1,11 @@
+<div class="container mt-5">
+    <h2>Search Results</h2>
+    <div class="card mt-3" *ngFor="let result of results">
+      <div class="card-body">
+        <h5 class="card-title">{{ result.title }}</h5>
+        <p class="card-text">{{ result.description }}</p>
+        <a href="#" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+  </div>
+  
