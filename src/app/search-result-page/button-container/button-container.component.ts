@@ -11,11 +11,11 @@ export class ButtonContainerComponent {
 
   toggleSummary(event: Event) {
     const isChecked = (event.target as HTMLInputElement).checked;
-    this.summaryToggle.emit(isChecked); // Emit true if checked, false if unchecked
+    this.summaryToggle.emit(isChecked);
   }
 
   toggleCopilot(event: Event) {
     const isChecked = (event.target as HTMLInputElement).checked;
-    this.copilotToggle.emit(isChecked); // Emit true if checked, false if unchecked
+    this.copilotToggle.emit(isChecked); 
   }
 }

@@ -1,17 +1,15 @@
 <app-search></app-search>
-<div style="padding: 0rem 12rem 1rem 12rem;background: #dff5f7;">
-
-
+<div  class="desktop-only-style background-colors "  >
   <app-button-container
-  (summaryToggle)="onSummaryToggle($event)"
-  (copilotToggle)="onCopilotToggle($event)">
-  ></app-button-container>
-
+    (summaryToggle)="onSummaryToggle($event)"
+    (copilotToggle)="onCopilotToggle($event)"
+  >
+    ></app-button-container
+  >
 
   <app-summary *ngIf="showSummary"></app-summary>
 
+  <app-copilot-results *ngIf="showCopilot"></app-copilot-results>
 
- <app-copilot-results *ngIf="showCopilot" ></app-copilot-results>
-
- <app-search-results></app-search-results>
+  <app-search-results></app-search-results>
 </div>
