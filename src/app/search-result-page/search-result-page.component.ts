@@ -6,9 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-result-page.component.scss']
 })
 export class SearchResultComponent {
-  results = [
-    { title: 'Result 1', description: 'Description for result 1' },
-    { title: 'Result 2', description: 'Description for result 2' },
-    { title: 'Result 3', description: 'Description for result 3' }
-  ];
+  searchText: string = '';
+  showButtons: boolean = false;
+
+  toggleButtons: string[] = ['Toggle 1', 'Toggle 2'];
+  actionButtons: string[] = ['Action 1', 'Action 2', 'Action 3'];
+
+  toggleState = {
+    enable: false,
+    disable: false
+  };
+
+  onSearch() {
+    if (this.searchText.trim()) {
+      console.log('Searching for:', this.searchText);
+      this.showButtons = true;
+    }
+  }
+
+  clearSearch() {
+    this.searchText = '';
+    this.showButtons = false; // Hide buttons when clearing the search
+  }
+
+
+  toggle(state: 'enable' | 'disable') {
+    // Reset both buttons to inactive
+    this.toggleState.enable = false;
+    this.toggleState.disable = false;
+
+    // Set the clicked button to active
+    this.toggleState[state] = true;
+  }
 }
