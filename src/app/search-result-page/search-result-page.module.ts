@@ -6,6 +6,10 @@ import { SearchResultComponent } from './search-result-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { ResultsComponent } from './results/results.component';
+import { ButtonContainerComponent } from './button-container/button-container.component';
+import { SummaryComponent } from './summary/summary.component';
+import { CopilotResultsComponent } from './copilot-results/copilot-results.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 
 @NgModule({
@@ -13,7 +17,11 @@ import { ResultsComponent } from './results/results.component';
     SearchResultComponent,
     NavbarComponent,
     SearchComponent,
-    ResultsComponent
+    ResultsComponent,
+    ButtonContainerComponent,
+    SummaryComponent,
+    CopilotResultsComponent,
+    SearchResultsComponent
   ],
   imports: [
     CommonModule,

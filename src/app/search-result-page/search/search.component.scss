@@ -1,21 +1,7 @@
-.search-container {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ced4da;
-    border-radius: .375rem;
-  }
-  .search-container input {
-    border: none;
-    outline: none;
-    padding: .5rem;
-    flex: 1;
-  }
-  .icon-button {
-    background: none;
-    border: none;
-    padding: .5rem;
-    cursor: pointer;
-  }
-  .icon-button:hover {
-    background-color: #e9ecef;
-  }
+.react-autosuggest__container {
+    position: relative;
+}
+.outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}

@@ -1,0 +1,43 @@
+.btn-circle.btn-lg {
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+  }
+  
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+    margin-right: 10px;
+  }
+  
+  .custom-btn-first {
+
+    --tw-bg-opacity: 1;
+    background-color: rgb(206 249 235 / var(--tw-bg-opacity));
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    color: #7cd67c;
+  }
+  .custom-btn-second {
+
+    --tw-bg-opacity: 1;
+      background-color: rgb(255 241 198 / var(--tw-bg-opacity));
+    border: none;
+    border-radius: 5px;
+    color: #cdcd6d
+  }
+  .custom-btn-third {
+
+    --tw-bg-opacity: 1;
+      background-color: rgb(253 227 227 / var(--tw-bg-opacity));
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    color: #c53d3d
+  }
