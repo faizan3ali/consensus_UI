@@ -3,9 +3,9 @@ import { RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: 'sign-up',
     loadChildren: () =>
-      import('./login/login.module').then((m) => m.LoginModule),
+      import('./sign-up/login.module').then((m) => m.LoginModule),
   },
   {
     path: 'search-result',

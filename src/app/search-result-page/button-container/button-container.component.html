@@ -1,15 +1,25 @@
 <div class="button-container">
     <div class="toggle-switch mr-2">
-      <input type="checkbox" id="toggle" class="toggle-input" />
-      <label class="toggle-label" for="toggle"></label>
-      <span class="toggle-text">Synthesize</span>
-    </div>
-
-    <div class="toggle-switch">
-      <input type="checkbox" id="toggle" class="toggle-input" />
-      <label class="toggle-label" for="toggle"></label>
-      <span class="toggle-text">Copilot</span>
-    </div>
+        <input
+          type="checkbox"
+          id="toggle-synthesize"
+          class="toggle-input"
+          (change)="toggleSummary($event)"
+        />
+        <label class="toggle-label" for="toggle-synthesize"></label>
+        <span class="toggle-text">Synthesize</span>
+      </div>
+      
+      <div class="toggle-switch">
+        <input
+          type="checkbox"
+          id="toggle-copilot"
+          class="toggle-input"
+          (change)="toggleCopilot($event)"
+        />
+        <label class="toggle-label" for="toggle-copilot"></label>
+        <span class="toggle-text">Copilot</span>
+      </div>
     <div class="action-buttons">
       <div class="flex justify-between w-full md:w-auto md:my-0">
         <div class="flex gap-2 mr-2">

@@ -1,13 +1,17 @@
-<div style="padding: 0rem 1rem 1rem 2%; background: #dff5f7">
-  <app-search></app-search>
-
-  <app-button-container></app-button-container>
+<app-search></app-search>
+<div style="padding: 0rem 12rem 1rem 12rem;background: #dff5f7;">
 
 
-  <app-summary></app-summary>
+  <app-button-container
+  (summaryToggle)="onSummaryToggle($event)"
+  (copilotToggle)="onCopilotToggle($event)">
+  ></app-button-container>
 
 
- <app-copilot-results></app-copilot-results>
+  <app-summary *ngIf="showSummary"></app-summary>
+
+
+ <app-copilot-results *ngIf="showCopilot" ></app-copilot-results>
 
  <app-search-results></app-search-results>
 </div>

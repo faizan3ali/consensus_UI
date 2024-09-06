@@ -8,34 +8,17 @@ import { Component } from '@angular/core';
 export class SearchResultComponent {
   searchText: string = '';
   showButtons: boolean = false;
+ 
+  showSummary = true;
+  showCopilot = true;
 
-  toggleButtons: string[] = ['Toggle 1', 'Toggle 2'];
-  actionButtons: string[] = ['Action 1', 'Action 2', 'Action 3'];
-
-  toggleState = {
-    enable: false,
-    disable: false
-  };
-
-  onSearch() {
-    if (this.searchText.trim()) {
-      console.log('Searching for:', this.searchText);
-      this.showButtons = true;
-    }
+  onSummaryToggle(isVisible: boolean) {
+    this.showSummary = isVisible; // Set showSummary based on emitted event
   }
 
-  clearSearch() {
-    this.searchText = '';
-    this.showButtons = false; // Hide buttons when clearing the search
+  onCopilotToggle(isVisible: boolean) {
+    this.showCopilot = isVisible; // Set showCopilot based on emitted event
   }
 
-
-  toggle(state: 'enable' | 'disable') {
-    // Reset both buttons to inactive
-    this.toggleState.enable = false;
-    this.toggleState.disable = false;
-
-    // Set the clicked button to active
-    this.toggleState[state] = true;
-  }
+  
 }
